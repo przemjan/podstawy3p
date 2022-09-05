@@ -20,5 +20,8 @@ public class ScanerDemo {
 
         System.out.println("Numer buta: " + numerButa +" średnia " + average +" imię " + name);
 
+
+        //https://github.com/przemjan/podstawy3p
+        //zad 8, 15, 19, 20
     }
 }
