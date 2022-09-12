@@ -9,6 +9,7 @@ public class PetlaFor1 {
             System.out.println("To jest iteracja numer " + i);
 
 
+
         }
         System.out.println("Wyszedłem z pętli");
 

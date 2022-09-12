@@ -20,8 +20,8 @@ public class Odczyt1 {
         System.out.println("Pierwsza linia pliku to: " + linia);
 
         //scanner odczytuje kolejne linie pliku (przechowuje pozycję odczytu)
-//        String linia2 = fileScanner.nextLine();
-//        System.out.println("Druga lina pliku to: " + linia2);
+        String linia2 = fileScanner.nextLine();
+        System.out.println("Druga lina pliku to: " + linia2);
 //        linia = fileScanner.nextLine();
 
         fileScanner.close();

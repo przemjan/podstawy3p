@@ -8,10 +8,10 @@ public class PrintWriterDemo  {
 
         PrintWriter pw = new PrintWriter("danie.txt");
 
-        pw.println("Marcin lubi pierogi :)");
+        pw.println("Szymon lubi pomidory :)");
 
         //zapisanie kolejnej linii
-        pw.println("Filip lubi spać");
+        //pw.println("Filip lubi spać");
 
         pw.close();
     }
