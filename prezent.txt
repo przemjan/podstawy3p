@@ -1,0 +1,137 @@
+Mikołaj daje prezenty :)
+A Bartosz nie :(
+
+1. Metoda showChar
+Napisz metodę showChar. Powinna ona przyjmować dwa argumenty: referencję do obiektu typu String i liczbę całkowitą. Argument w postaci liczby całkowitej określa pozycję znaku w obiekcie typu String (pierwszy znak znajduje się na pozycji zerowej). Metoda ma wyświetlać znak z podanej pozycji. Oto przykładowe wywołanie tej metody:
+String cityName ;
+showChar(cityName,2);
+W tym wywołaniu metoda wyświetli znak w, ponieważ to on znajduje się na drugiej pozycji. Zademonstruj tę metodę w kompletnym programie.
+2. Kalkulator ceny detalicznej
+Napisz program, który wyświetla prośbę o wpisanie ceny hurtowej produktu i marży (w procentach). Program powinien wyświetlać cenę detaliczną. Oto przykład:
+• Jeśli cena hurtowa wynosi 5,00 złotych, a marża to 100%, to cena detaliczna jest równa 10,00 złotych.
+• Jeśli cena hurtowa to 5,00 złotych, a marża jest równa 50%, to cena detaliczna wynosi 7,50 złotego.
+Program powinien obejmować metodę calculateRetail, która przyjmuje argumenty w postaci ceny hurtowej i marży oraz zwraca cenę detaliczną produktu.
+3. Kalkulator szacunkowych kosztów malowania
+Firma malarska określiła, że każde 10 m2 powierzchni ściany wymaga 1,5 litra farby i 8 godzin pracy. Koszty robocizny firma wycenia na 18,00 złotych za godzinę. Napisz program, który pozwala użytkownikowi wprowadzić liczbę pokojów do pomalowania i cenę farby za litr. Program powinien też wyświetlać pytanie o powierzchnię każdego pokoju w metrach kwadratowych. W programie należy umieścić metody zwracające następujące dane:
+• liczbę potrzebnych litrów farby,
+• liczbę potrzebnych godzin pracy,
+• koszt farby,
+• koszt robocizny,
+• łączny koszt malowania.
+Program powinien wyświetlać te dane na ekranie.
+4. Odległość przebywana w trakcie spadania
+Gdy obiekt spada z powodu grawitacji, można zastosować następujący wzór, aby obliczyć odległość przebytą w określonym czasie:
+d = 0,5gt^2
+Oto zmienne z tego wzoru: d to odległość w metrach, g to stała 9,8, a t to czas spadania obiektu (podany w sekundach).
+Napisz metodę fallingDistance, która jako argument przyjmuje czas spadania obiektu (w sekundach). Ta metoda powinna zwracać odległość (w metrach), jaką przebył w tym czasie spadający obiekt.
+Zademonstruj działanie tej metody, wywołując ją w pętli, która przekazuje wartości od 1 do 10 jako argument, a następnie wyświetla zwróconą wartość.
+5. Tabela z temperaturami w stopniach Celsjusza
+Oto wzór na przeliczanie temperatury ze stopni Fahrenheita na stopnie Celsjusza:
+C=5/9*(F-32)
+W tym wzorze F oznacza temperaturę w stopniach Fahrenheita, a C to temperatura w stopniach Celsjusza. Napisz metodę celsius, która jako argument przyjmuje temperaturę w stopniach Fahrenheita. Ta metoda powinna zwracać temperaturę przeliczoną na stopnie Celsjusza. Zademonstruj działanie tej metody, wywołując ją w pętli, która wyświetla tabelę z temperaturami od 0 do 20 w stopniach Fahrenheita i ich odpowiednikami w stopniach Celsjusza.
+6. Średnia z testów i oceny
+Napisz program, który wyświetla prośbę o wpisanie wyników pięciu testów. Program powinien wyświetlać ocenę z każdego testu i średnią z wszystkich testów. Napisz w programie następujące metody:
+• calcAverage — powinna przyjmować jako argumenty pięć wyników testów i zwracać ich średnią;
+• determineGrade — powinna przyjmować jako argument wynik testu i zwracać ocenę zgodnie z poniższą skalą:
+Wynik Ocena
+90 – 100 5
+80 – 89 4
+70 – 79 3
+60 – 69 2
+Poniżej 60 1
+7. Program konwertujący
+Napisz program, który wyświetla prośbę o wprowadzenie odległości w metrach. Następnie program powinien udostępniać menu z takimi oto opcjami:
+1. konwersja na kilometry,
+2. konwersja na cale,
+3. konwersja na stopy,
+4. wyjście z programu.
+Program w zależności od wyboru dokonanego przez użytkownika ma przekształcać odległość na kilometry, cale lub stopy. Oto wymogi stawiane programowi:
+• Napisz metodę void o nazwie showKilometers, która jako argument przyjmuje liczbę metrów i wyświetla tę samą odległość w kilometrach. Metry na kilometry należy przekształcać na podstawie następującego wzoru:
+kilometers = meters * 0.001
+• Napisz metodę void o nazwie showInches, która jako argument przyjmuje liczbę metrów i wyświetla tę samą odległość w calach. Metry na cale należy przekształcać na podstawie następującego wzoru:
+inches = meters * 39.37
+• Napisz metodę void o nazwie showFeet, która jako argument przyjmuje liczbę metrów i wyświetla tę samą odległość w stopach. Metry na stopy należy przekształcać na podstawie następującego wzoru:
+feet = meters * 3.281
+• Napisz metodę void o nazwie menu, która wyświetla menu z opcjami. Ta metoda nie powinna przyjmować żadnych argumentów.
+• Program powinien wyświetlać menu do czasu wprowadzenia przez użytkownika liczby 4, oznaczającej zamknięcie programu.
+• Program przy pobieraniu odległości w metrach nie powinien przyjmować liczb ujemnych.
+• Jeśli użytkownik nie wybrał z menu poprawnej opcji, program powinien wyświetlać komunikat o błędzie.
+Oto przykładowa sesja używania tego programu w konsoli. Dane wejściowe wyróżniono
+pogrubieniem:
+Podaj odległość w metrach: 500 [Enter]
+1. Przelicz na kilometry.
+2. Przelicz na cale.
+3. Przelicz na stopy.
+4. Zamknij program.
+Podaj wybraną opcję: 1 [Enter]
+500 metrów w kilometrach to 0,5.
+1. Przelicz na kilometry.
+2. Przelicz na cale.
+3. Przelicz na stopy.
+4. Zamknij program.
+Podaj wybraną opcję: 3 [Enter]
+500 metrów w stopach to 1640,5.
+1. Przelicz na kilometry.
+2. Przelicz na cale.
+3. Przelicz na stopy.
+4. Zamknij program.
+Podaj wybraną opcję: 4 [Enter]
+Żegnaj!
+8. Zmodyfikowana wersja programu do obliczania przejechanej odległości
+Odległość przejechaną przez pojazd można obliczyć za pomocą następującego wzoru:
+odległość = szybkość × czas
+Napisz metodę distance, która jako argumenty przyjmuje szybkość pojazdu i czas, a następnie zwraca przejechaną odległość. Zmodyfikuj program „Przebyta odległość” z poprzednich zajęć aby używał tej metody.
+9. Zysk ze sprzedaży akcji
+Zysk ze sprzedaży akcji można obliczyć w następujący sposób:
+zysk = ((LA × CZ) – PZ) – ((LA × CS) + PS)
+W tym wzorze LA to liczba akcji, CZ to cena zakupu, PZ to kwota prowizji od zakupu, CS to cena sprzedaży, a PS to kwota prowizji od sprzedaży. Jeśli obliczenia dają liczbę dodatnią, oznacza to, że sprzedaż akcji przyniosła zysk. Jeżeli wynik jest liczbą ujemną, sprzedaż wiąże się ze stratą.
+Napisz metodę, która przyjmuje argumenty w postaci liczby akcji, ceny zakupu (za akcję), prowizji od zakupu, ceny sprzedaży (za akcję) i prowizji od sprzedaży. Metoda ta powinna zwracać poziom zysku (lub straty) ze sprzedaży akcji. Zademonstruj działanie tej metody w programie, który prosi o wprowadzenie potrzebnych danych i wyświetla poziom zysku lub straty.
+10. Sprzedaż akcji różnych firm
+Wykorzystaj metodę napisaną w zadaniu 9 w programie, który oblicza łączny zysk lub sumaryczną stratę ze sprzedaży akcji różnych firm. Program powinien sumować zysk lub stratę ze sprzedaży akcji każdej firmy, a następnie wyświetlać uzyskaną sumę.
+11. Energia kinetyczna
+W fizyce poruszający się obiekt posiada energię kinetyczną. Do jej obliczenia można
+posłużyć się następującym wzorem:
+Ek = 0,5mv2
+Oto zmienne z tego wzoru: Ek to energia kinetyczna, m to masa obiektu w kilogramach,
+a v to prędkość obiektu w metrach na sekundę.
+Napisz metodę kineticEnergy, która jako argumenty przyjmuje masę obiektu (w kilogramach)
+i szybkość (w metrach na sekundę). Metoda ta powinna zwracać ilość energii
+kinetycznej obiektu. Zademonstruj działanie tej metody, wywołując ją w programie,
+który wyświetla prośbę o podanie masy i prędkości.
+12. Metoda isPrime
+Liczba pierwsza cechuje się tym, że jest podzielna bez reszty tylko przez siebie samą i liczbę 1. Na przykład liczba 5 jest pierwsza, ponieważ dzieli się bez reszty tylko przez 1 i 5. Z kolei liczba 6 nie jest pierwsza, ponieważ jest podzielna bez reszty przez 1, 2, 3 i 6.
+Napisz metodę isPrime, która przyjmuje argument w postaci liczby całkowitej i zwraca wartość true, jeśli argument jest liczbą pierwszą, lub false w przeciwnym razie. Zademonstruj działanie tej metody w kompletnym programie.
+WSKAZÓWKA: Przypomnij sobie, że operator % dzieli jedną liczbę przez drugą i zwraca resztę z tej operacji. W wyrażeniu takim jak num1 % num2 operator % zwraca 0, jeśli num1 dzieli się bez reszty przez num2.
+13. Lista liczb pierwszych
+Wykorzystaj metodę isPrime, którą napisałeś w ćwiczeniu programistycznym nr 12, w programie zapisującym w pliku listę wszystkich liczb pierwszych z przedziału od 1 do 10000.
+14. Licznik liczb parzystych i nieparzystych
+Możesz posłużyć się następującą logiką do określenia, czy liczba jest parzysta, czy nieparzysta:
+if ((number % 2) == 0){
+// Liczba jest parzysta.
+}
+else{
+// Liczba jest nieparzysta.
+}
+Napisz program z metodą isEven, który przyjmuje argument typu int. Ta metoda powinna zwracać wartość true, jeśli argument jest parzysty, lub wartość false, jeśli argument jest nieparzysty. W metodzie main programu należy zastosować pętlę do wygenerowania 100 losowych liczb całkowitych. W pętli tej program powinien używać metody isEven do sprawdzania, czy te liczby losowe są parzyste, czy nieparzyste. Po zakończeniu pracy pętli program powinien wyświetlać, ile wygenerowanych liczb jest parzystych, a ile nieparzystych.
+15. Wartość bieżąca
+Załóżmy, że chcesz zdeponować jakąś kwotę na rachunku oszczędnościowym, a następnie pozostawić ją na nim, aby otrzymywać odsetki przez następnych 10 lat. Pod koniec okresu wynoszącego 10 lat chcesz mieć na koncie 10 000 złotych. Ile pieniędzy musisz zdeponować, aby uzyskać taką kwotę? Aby się o tym dowiedzieć, możesz posłużyć się następującym wzorem (jest to wzór na wartość bieżącą):
+P=F/(1+r)^n
+Oto symbole z tego wzoru:
+• P to wartość bieżąca, czyli kwota, jaką musisz dziś zdeponować.
+• F to wartość przyszła, jaką chcesz uzyskać na koncie. Tu F wynosi 10 000 złotych.
+• r to roczna stopa oprocentowania.
+• n to liczba lat, przez jakie planujesz pozostawić pieniądze na koncie.
+Napisz metodę presentValue, która oblicza wartość bieżącą. Ta metoda powinna przyjmować argumenty w postaci wartości przyszłej, rocznej stopy oprocentowania i liczby lat, a następnie zwracać wartość bieżącą, czyli kwotę, jaką musisz obecnie zdeponować. Zademonstruj działanie tej metody w programie, który umożliwia użytkownikowi eksperymentowanie z różnymi wartościami elementów wzoru.
+16. „Kamień, papier, nożyce”
+Napisz program, który umożliwia grę w „kamień, papier, nożyce” z komputerem.
+Program powinien działać w następujący sposób:
+1. Gdy program rozpoczyna pracę, generowana jest liczba losowa z przedziału od 1 do 3. Jeśli ta liczba to 1, komputer wybrał kamień, Jeżeli ta liczba to 2, komputer wybrał papier. Liczba 3 oznacza, że komputer wybrał nożyce. Początkowo nie należy wyświetlać opcji wybranej przez komputer.
+2. Użytkownik za pomocą klawiatury podaje swój wybór: kamień, papier lub nożyce.
+Jeśli chcesz, możesz posłużyć się w tym celu menu.
+3. Wyświetlany jest wybór dokonany przez komputer.
+4. Wybierany jest zwycięzca zgodnie z następującymi regułami:
+• Jeśli jeden gracz wybrał kamień, a drugi nożyce, kamień wygrywa (kamień tępi nożyce).
+• Jeśli jeden gracz wybrał nożyce, a drugi papier, nożyce wygrywają (nożyce tną papier).
+• Jeśli jeden gracz wybrał papier, a drugi kamień, papier wygrywa (papier ściera kamień).
+• Jeśli obie strony dokonały tego samego wyboru, grę trzeba powtórzyć, aby ustalić zwycięzcę.
+Koniecznie podziel program na metody wykonujące poszczególne zadania.
