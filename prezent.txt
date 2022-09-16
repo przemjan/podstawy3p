@@ -4,7 +4,7 @@ A Bartosz nie :(
 1. Metoda showChar
 Napisz metodę showChar. Powinna ona przyjmować dwa argumenty: referencję do obiektu typu String i liczbę całkowitą. Argument w postaci liczby całkowitej określa pozycję znaku w obiekcie typu String (pierwszy znak znajduje się na pozycji zerowej). Metoda ma wyświetlać znak z podanej pozycji. Oto przykładowe wywołanie tej metody:
 String cityName ;
-cityName = "Kwaczków";
+cityName = "Kawałków";
 showChar(cityName,2);
 W tym wywołaniu metoda wyświetli znak w, ponieważ to on znajduje się na drugiej pozycji. Zademonstruj tę metodę w kompletnym programie.
 2. Kalkulator ceny detalicznej
