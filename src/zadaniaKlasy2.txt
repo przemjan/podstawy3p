@@ -1,0 +1,56 @@
+1:. Symulator mandatów
+W tym ćwiczeniu zaprojektujesz zestaw klas, które współdziałają ze sobą, aby symulować
+pracę kontrolera wystawiającego mandaty. Powinieneś zaprojektować następujące
+klasy:
+ ParkedCar. Ta klasa powinna symulować zaparkowany samochód. Oto jej zadania:
+- znajomość marki, modelu, koloru i numeru rejestracyjnego samochodu oraz liczby minut, przez jakie pojazd stoi zaparkowany.
+ ParkingMeter. Ta klasa powinna symulować parkometr. Oto jej jedyne zadanie:  znajomość liczby wykupionych minut parkowania.
+ ParkingTicket. Ta klasa powinna symulować bilet parkingowy. Zadania tej klasy to:
+- informowanie o marce, modelu, kolorze i numerze rejestracyjnym źle zaparkowanego samochodu;
+- informowanie o wysokości mandatu; wynosi ona 50 złotych za pierwszą godzinę nielegalnego parkowania plus 20 złotych za każdą następną godzinę;
+- informowanie o nazwisku i numerze identyfikatora kontrolera, który wystawił mandat.
+ PoliceOfficer. Ta klasa powinna symulować kontrolera sprawdzającego zaparkowane samochody. Oto zadania tej klasy:
+- znajomość nazwiska i numeru identyfikatora kontrolera;
+- sprawdzanie obiektów ParkedCar i ParkingMeter oraz ustalanie, czy wykupiony czas parkowania już upłynął;
+- wystawianie mandatu za nieprawidłowe parkowanie (generowanie obiektu typu ParkingTicket), jeśli upłynął wykupiony czas parkowania.
+Napisz program ilustrujący współdziałanie tych klas.
+2. Kalkulator geometryczny
+Zaprojektuj klasę Geometry zawierającą następujące metody:
+- Statyczną metodę przyjmującą promień koła i zwracającą powierzchnię tej figury.
+Wykorzystaj następujący wzór:
+powierzchnia = ¬r2
+Wykorzystaj Math.PI jako ¬ i promień koła jako r.
+- Statyczną metodę przyjmująca długość i szerokość prostokąta oraz zwracającą powierzchnię tej figury. Posłuż się następującym wzorem:
+powierzchnia = długość × szerokość
+- Statyczną metodę przyjmującą długość podstawy trójkąta i jego wysokość.
+Metoda powinna obliczać powierzchnię tej figury. Zastosuj następujący wzór:
+powierzchnia = podstawa × wysokość × 0,5
+Te metody powinny wyświetlać komunikat o błędzie, jeśli dla promienia koła, długości lub szerokości prostokąta albo podstawy lub wysokości trójkąta podano liczbę ujemną.
+W dalszej kolejności napisz program do testowania tej klasy. Powinien on wyświetlać następujące menu i reagować na wybór dokonany przez użytkownika:
+Kalkulator geometryczny
+1. Obliczanie powierzchni koła.
+2. Obliczanie powierzchni prostokąta.
+3. Obliczanie powierzchni trójkąta.
+4. Zakończ.
+Wprowadź wybraną opcję (1-4):
+Wyświetl komunikat o błędzie, jeśli użytkownik w menu wybierze liczbę spoza przedziału od 1 do 4.
+3. Symulator wskaźników w samochodzie
+W tym ćwiczeniu zaprojektujesz zestaw klas, które współdziałają w celu symulowania wskaźnika poziomu paliwa i licznika przejechanych kilometrów w samochodzie.
+Oto klasy, które należy zaprojektować:
+ FuelGauge. Ta klasa ma symulować wskaźnik poziomu paliwa. Oto jej zadania:
+- znajomość aktualnej ilości paliwa w samochodzie (w litrach);
+- informowanie o aktualnej ilości paliwa w samochodzie (w litrach);
+- umożliwianie zwiększenia ilości paliwa o 1 litr (symulowanie tankowania; bak mieści maksymalnie 60 litrów);
+- umożliwianie zmniejszenia ilości paliwa o 1 litr, jeśli ta ilość jest większa niż 0 litrów (symulowanie spalania paliwa przez samochód).
+ Odometer. Ta klasa ma symulować licznik przejechanych kilometrów.
+Jej zadania to:
+- znajomość aktualnego stanu licznika;
+- informowanie o aktualnym stanie licznika;
+- umożliwianie zwiększania stanu licznika o 1 kilometr (maksymalna wartość licznika to 999 999 kilometrów; po przekroczeniu tej wartości licznik ma wrócić do 0);
+- umożliwianie współpracy z obiektem typu FuelGauge; obiekt typu Odometer powinien zmniejszać ilość paliwa w obiekcie typu FuelGauge o 1 litr co 20 kilometrów (spalanie samochodu wynosi 5 litrów na 100 kilometrów).
+Utwórz instancje tych klas, aby zademonstrować ich działanie. Zasymuluj tankowanie samochodu, a następnie uruchom w pętli kod zwiększający wartość licznika przejechanych kilometrów do momentu wyczerpania się benzyny. W każdej iteracji wyświetlaj aktualny stan licznika i ilość paliwa.
+3. Gra w „wyścig do jedynki”
+Jest to gra przeznaczona dla dwóch lub więcej graczy. Wszyscy gracze początkowo mają w niej po 50 punktów i po kolei rzucają kostką. Liczba wyrzuconych oczek jest odejmowana od liczby punktów gracza. Pierwsza osoba, która osiągnie dokładnie jeden punkt, wygrywa. Jeśli po odjęciu wyrzuconej liczby oczek gracz uzyskałby ujemną liczbę punktów, należy dodać wyrzuconą liczbę, zamiast ją odejmować. Inna możliwość to rozgrywanie gry przez określoną liczbę kolejek. Wtedy wygrywa gracz z liczbą punktów najbliższą jedynce po zakończeniu wszystkich kolejek.
+Napisz program symulujący rozgrywkę między dwoma graczami. Do symulowania rzutów kostką posłuż się zaprezentowaną klasą Die. Napisz klasę Player symulującą graczy.
+14. Orzeł czy reszka?
+Ta gra jest przeznaczona dla dwóch lub więcej graczy. Uczestnicy na zmianę rzucają monetą. Przed rzutem gracze obstawiają, czy wypadnie orzeł czy reszka. Jeśli gracz odgadnie wynik rzutu, otrzymuje punkt. Jeśli obstawienie jest nieudane, odejmowany jest punkt. Pierwszy gracz, który uzyska pięć punktów, wygrywa. Napisz program symulujący rozgrywanie tej gry przez dwie osoby.
